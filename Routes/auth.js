@@ -6,11 +6,7 @@ const jwt = require('jsonwebtoken');
 //const {registerValidation} = require('../Routes/validation');
 const token11 = "iloveyou";
 
-const schema = {
-    name : Joi.string().min(6).required(),
-    email : Joi.string().min(6).required().email(),
-    password : Joi.string().min(6).required()
-};
+
 
 router.post('/user', async (req,res)=>{
 
