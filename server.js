@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const authRoutes = require('./Routes/auth')
 
 app.use(express.json());
-mongoose.connect('mongodb+srv://admin:sophun@cluster0.h5mg6z1.mongodb.net/?retryWrites=true&w=majority',{useNewUrlParser:true},()=>{
+mongoose.connect('DB_URL',{useNewUrlParser:true},()=>{
     console.log("connect to DataBase...")
 })
 
